@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: httpbin
+  name: nani-service
   labels:
-    app: httpbin
-    service: httpbin
+    app: nani-app
 spec:
-  ports:
-  - name: http
-    port: 8000
-    targetPort: 80
+  type: ClusterIP  # Use NodePort if needed
   selector:
-    app: httpbin
+    app: nani-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
