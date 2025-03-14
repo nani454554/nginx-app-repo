@@ -14,7 +14,6 @@ spec:
         app: httpbin
         version: v1
     spec:
-      serviceAccountName: httpbin
       containers:
       - image: kong/httpbin:latest
         imagePullPolicy: IfNotPresent
