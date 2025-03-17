@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nani-app
-        image: harshithareddyc/flutter:latest
+        image: kennethreitz/httpbin:test
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
