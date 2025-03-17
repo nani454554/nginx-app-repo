@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nani-app
 spec:
-  type: ClusterIP  # Use NodePort if needed
+  type: LoadBalancer  # Use NodePort if needed
   selector:
     app: nani-app
   ports:
